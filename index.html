@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Marvel Movies Survey</title>
+  
+  
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <h1 id="title">MARVEL Movies Survey</h1>
+<div id="form-outer">
+  <p id="description">What are your favorite MARVEL movies?</p>
+  
+<!-- This is the user information -->
+  <form id="survey-form" method="GET" action="nothing.asp">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+      </div>
+    </div>
+    
+<!-- This is where the survey ??? begin -->    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">First of all, what kind of fan are you? Marvel or DC?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+          <option value="Select an option">Select an option</option>
+          <option value="MARVEL">MARVEL</option>
+          <option value="DC">DC</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRecommend">Would you recommend MARVEL movies to someone who hadn't seen them yet?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Absolutely<input name="radio-buttons" value="1"  type="radio" class="userRecommend" ></label></li>
+          <li class="radio"><label>Depends<input name="radio-buttons" value="2"  type="radio" class="userRecommend" ></label></li>
+          <li class="radio"><label>No<input name="radio-buttons" value="3"  type="radio" class="userRecommend" ></label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="Fav-Movie">What is your favorite MARVEL movie: </label>
+      </div>
+      <div class="rightTab">
+        <select id="fav-movie" name="favMovie" class="dropdown">
+          <option disabled selected value>Select an option</option>
+          <option value="Iron Man">Iron Man</option>
+          <option value="The Incredible Hulk">The Incredible Hulk</option>
+          <option value="Iron Man 2">Iron Man 2</option>
+          <option value="Thor">Thor</option>
+          <option value="Captain America: The First Avenger">Captain America: The First Avenger</option>
+          <option value="The Avengers">The Avengers</option>
+          <option value="Iron Man 3">Iron Man 3</option>
+          <option value="Thor: The Dark World">Thor: The Dark World</option>
+          <option value="Captain America: The Winter Soldier">Captain America: The Winter Soldier</option>
+          <option value="Guardians of the Galaxy">Guardians of the Galaxy</option>
+          <option value="Avengers: Age of Ultron">Avengers: Age of Ultron</option>
+          <option value="Ant-Man">Ant-Man</option>
+          <option value="Captain America: Civil War">Captain America: Civil War</option>
+          <option value="Doctor Strange">Doctor Strange</option>
+          <option value="Guardians of the Galaxy Vol. 2">Guardians of the Galaxy Vol. 2</option>
+          <option value="Spiderman: Homecoming">Spiderman: Homecoming</option>
+          <option value="Thor: Ragnarok">Thor: Ragnarok</option>
+          <option value="Black Panther">Black Panther</option>
+          <option value="Avengers: Infinity War">Avengers: Infinity War</option>
+        </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">Who is/are your favorite MARVEL Superheroes: </label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRecommend">Iron Man</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRecommend">Captain America</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRecommend">Thor</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRecommend">Black Widow</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRecommend">Falcon</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRecommend">War Machine</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRecommend">Hawkeye</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRecommend">Dr. Strange</label></li>
+          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRecommend">Black Panther</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRecommend">Vision</label></li>
+          <li class="checkbox"><label><input name="prefer" value="11" type="checkbox" class="userRecommend">Scarlett Witch</label></li>
+          <li class="checkbox"><label><input name="prefer" value="12" type="checkbox" class="userRecommend">Ant-Man</label></li>
+          <li class="checkbox"><label><input name="prefer" value="13" type="checkbox" class="userRecommend">Spiderman</label></li>
+          <li class="checkbox"><label><input name="prefer" value="14" type="checkbox" class="userRecommend">Star Lord</label></li>
+          <li class="checkbox"><label><input name="prefer" value="15" type="checkbox" class="userRecommend">Gamora</label></li>
+          <li class="checkbox"><label><input name="prefer" value="16" type="checkbox" class="userRecommend">I am Groot</label></li>
+          <li class="checkbox"><label><input name="prefer" value="17" type="checkbox" class="userRecommend">Rocket Racoon</label></li>
+          <li class="checkbox"><label><input name="prefer" value="18" type="checkbox" class="userRecommend">Drax</label></li>
+        </ul>
+      </div>
+    </div>
+<!-- Comments and Submit -->
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Anything else you would like to say about MCU?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+
+  
+
+</body>
+
+</html>
